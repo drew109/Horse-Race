@@ -2,7 +2,6 @@ import tkinter as tk
 from turtle import ScrolledCanvas, Turtle, Screen, RawTurtle
 from turtle import *
 from random import randint
-from weakref import ref
 
 root = tk.Tk()
 frame = tk.Frame(root)
