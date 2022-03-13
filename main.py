@@ -29,6 +29,12 @@ ref_turtle.right(90)
 ref_turtle.forward(300)
 ref_turtle.right(90)
 ref_turtle.forward(410)
+ref_turtle.pu()
+ref_turtle.setposition(-180, -20)
+ref_turtle.pd()
+style = ('Arial', 25, 'bold')
+ref_turtle.write('Start!', font=style, align='center')
+
 
 ref_turtle.ht()
 
