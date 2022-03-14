@@ -14,6 +14,7 @@ canvas.pack()
 # Ref Turtle
 ref_turtle = RawTurtle(canvas)
 ref_turtle.color('black')
+ref_turtle.shape('square')
 ref_turtle.pu()
 ref_turtle.speed(5)
 ref_turtle.left(90)
@@ -41,16 +42,17 @@ ref_turtle.ht()
 # Red Turtle
 red_turtle = RawTurtle(canvas)
 red_turtle.color('red')
+red_turtle.shape('turtle')
 red_turtle.pu()
 red_turtle.speed(1)
 red_turtle.left(180)
 red_turtle.forward(230)
 red_turtle.right(180)
 
-
 # Blue Turtle
 blue_turtle = RawTurtle(canvas)
 blue_turtle.color('blue')
+blue_turtle.shape('turtle')
 blue_turtle.pu()
 blue_turtle.speed(1)
 blue_turtle.left(180)
@@ -63,6 +65,7 @@ blue_turtle.right(90)
 # Green Turtle
 green_turtle = RawTurtle(canvas)
 green_turtle.color('green')
+green_turtle.shape('turtle')
 green_turtle.pu()
 green_turtle.speed(1)
 green_turtle.left(180)
@@ -75,6 +78,7 @@ green_turtle.right(90)
 # Black Turtle
 black_turtle = RawTurtle(canvas)
 black_turtle.color('black')
+black_turtle.shape('turtle')
 black_turtle.pu()
 black_turtle.speed(1)
 black_turtle.left(180)
@@ -84,12 +88,26 @@ black_turtle.forward(30)
 black_turtle.right(-90)
 
 
+# purple Turtle
+purple_turtle = RawTurtle(canvas)
+purple_turtle.color('purple')
+purple_turtle.shape('turtle')
+purple_turtle.pu()
+purple_turtle.speed(1)
+purple_turtle.left(180)
+purple_turtle.forward(230)
+purple_turtle.left(90)
+purple_turtle.forward(60)
+purple_turtle.right(-90)
+
+
 def start_race():
     for turn in range(130):
         black_turtle.forward(randint(1, 5))
         red_turtle.forward(randint(1, 5))
         blue_turtle.forward(randint(1, 5))
         green_turtle.forward(randint(1, 5))
+        purple_turtle.forward(randint(1, 5))
 
 
 btn = tk.Button(root, text='Start the Race', command=start_race)
